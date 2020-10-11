@@ -15,7 +15,7 @@ struct KeyFrame {
 	cv::Mat image;
 	std::vector<cv::KeyPoint> obsPoints;
 	cv::Mat descriptor;
-	std::unordered_map<int, int> uoMap;
+	std::unordered_map<int, int> uoMap;	//(特徴点のid, マップ点のid)
 	Eigen::Isometry3d pose;
 };
 
